@@ -1,0 +1,276 @@
+.robot-eye-left {
+  animation: eye-grow 2s infinite alternate;
+}
+@keyframes eye-grow {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.robot-eye-right {
+  animation: eye-move 2s infinite, eye-rotate 2s infinite linear;
+}
+@keyframes eye-move {
+  0% {
+    left: 50px;
+    bottom: 35px;
+  }
+  25% {
+    left: 65px;
+    bottom: 20px;
+  }
+  50% {
+    left: 50px;
+    bottom: 5px;
+  }
+  75% {
+    left: 35px;
+    bottom: 20px;
+  }
+  100% {
+    left: 50px;
+    bottom: 35px;
+  }
+}
+@keyframes eye-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.robot-nose {
+  transition: all 0.5s linear 0.5s;
+}
+.robot-nose:hover {
+  transform: rotate(360deg);
+  background-color: firebrick;
+  color: white;
+}
+
+.robot-tooth1 {
+  animation: tooth-disappear 2s infinite alternate;
+}
+.robot-tooth2 {
+  animation: tooth-disappear 2s infinite alternate 0.5s;
+}
+@keyframes tooth-disappear {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.oneleft {
+  animation: hair-jump-one-left 0.5s ease-out infinite alternate;
+}
+@keyframes hair-jump-one-left {
+  0% {
+    top: 80px;
+    background: linear-gradient(90deg, orange, red, orange);
+  }
+  50% {
+    background: linear-gradient(90deg, red, orange, red);
+  }
+  100% {
+    top: 50px;
+    background: linear-gradient(90deg, orange, red, orange);
+  }
+}
+.twoleft {
+  animation: hair-jump-two-left 0.5s ease-out 0.2s infinite alternate;
+}
+@keyframes hair-jump-two-left {
+  0% {
+    top: 50px;
+    background: linear-gradient(90deg, lightgreen, green, lightgreen);
+  }
+  50% {
+    background: linear-gradient(90deg, green, lightgreen, green);
+  }
+  100% {
+    top: 30px;
+    background: linear-gradient(90deg, lightgreen, green, lightgreen);
+  }
+}
+.robot-hair-three {
+  animation: hair-jump 0.5s ease-out 0.4s infinite alternate;
+}
+@keyframes hair-jump {
+  0% {
+    top: 10px;
+    background: linear-gradient(90deg, aqua, blue, aqua);
+  }
+  50% {
+    background: linear-gradient(90deg, blue, aqua, blue);
+  }
+  100% {
+    top: 0px;
+    background: linear-gradient(90deg, aqua, blue, aqua);
+  }
+}
+.tworight {
+  animation: hair-jump-two-right 0.5s ease-out 0.6s infinite alternate;
+}
+@keyframes hair-jump-two-right {
+  0% {
+    bottom: 20px;
+    background: linear-gradient(90deg, lightgreen, green, lightgreen);
+  }
+  50% {
+    background: linear-gradient(90deg, green, lightgreen, green);
+  }
+  100% {
+    bottom: 40px;
+    background: linear-gradient(90deg, lightgreen, green, lightgreen);
+  }
+}
+.oneright {
+  animation: hair-jump-one-right 0.5s ease-out 0.8s infinite alternate;
+}
+@keyframes hair-jump-one-right {
+  0% {
+    bottom: 40px;
+    background: linear-gradient(90deg, orange, red, orange);
+  }
+  50% {
+    background: linear-gradient(90deg, red, orange, red);
+  }
+  100% {
+    bottom: 70px;
+    background: linear-gradient(90deg, orange, red, orange);
+  }
+}
+
+.robot-ear-left {
+  animation: ear-color-rotate 3s infinite linear;
+}
+@keyframes ear-color-rotate {
+  0% {
+    right: 125px;
+    background: conic-gradient(
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+  }
+  14.29% {
+    background: conic-gradient(
+      violet,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo
+    );
+  }
+  28.57% {
+    background: conic-gradient(
+      indigo,
+      violet,
+      red,
+      orange,
+      yellow,
+      green,
+      blue
+    );
+  }
+  42.86% {
+    background: conic-gradient(
+      blue,
+      indigo,
+      violet,
+      red,
+      orange,
+      yellow,
+      green
+    );
+  }
+  50% {
+    right: 150px;
+  }
+  57.14% {
+    background: conic-gradient(
+      green,
+      blue,
+      indigo,
+      violet,
+      red,
+      orange,
+      yellow
+    );
+  }
+  71.43% {
+    background: conic-gradient(
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet,
+      red,
+      orange
+    );
+  }
+  85.71% {
+    background: conic-gradient(
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet,
+      red
+    );
+  }
+  100% {
+    right: 125px;
+    background: conic-gradient(
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+  }
+}
+
+.robot-ear-right {
+  animation: ear-rotate 3s infinite linear;
+}
+@keyframes ear-rotate {
+  0% {
+    transform: rotate(0);
+    left: 125px;
+  }
+  50% {
+    transform: rotate(-180deg);
+    left: 150px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 125px;
+  }
+}
